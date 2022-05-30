@@ -41,6 +41,13 @@
     justify-content: flex-end !important;
 }
 
+@media (min-width: 576px) {
+    .navbar-expand-sm {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+
 .navbar-dark .navbar-brand {
     color: #fff;
 }
@@ -85,6 +92,14 @@
 
 .bg-dark {
     background-color: #212529 !important;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 .btn {
@@ -204,4 +219,57 @@
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 0.7px;
     align-items: center;
+}
+
+
+/* The switch - the box around the slider */
+
+* {
+    box-sizing: border-box;
+}
+
+.lang-menu {
+    font-family: Helvetica;
+    font-weight: bold;
+    position: relative;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: rgba(55, 30, 30, 1);
+    position: absolute;
+    top: 31px;
+    right: 0px;
+    width: 80px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    text-decoration-color: #be2915;
+    padding: 5px 10px;
+    display: block;
+}
+
+.btn-outline-lang {
+    color: #6c757d;
+    width: 80px;
+}
+
+.btn-outline-lang:hover {
+    color: #fff;
+    background-color: #be2915;
+    border: 0.5px solid rgba(30, 30, 30, 1);
+}
+
+.lang-menu:hover ul {
+    display: block;
 }
