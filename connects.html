@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connects - Betül Azakoğlu</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+    <script src="component.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+<div class="header-connects">
+     <my-navbar></my-navbar> 
+      <div class="container-connects">
+        <h2 class="connects-title">PLEASE FEEL FREE TO REACH OUT ON SOCIAL MEDIA</h2>
+        <div class="social-icons-connects">
+          <div class="social-icons-connects-left">
+            <ul>
+              <li><a href="https://www.facebook.com/tolga.cevik.hastasi" target="_blank"><i class="fa fa-facebook"></i> - Facebook</a></li>
+              <li><a href="https://www.instagram.com/azakkizi" target="_blank"><i class="fa fa-instagram"></i> - Instagram</a></li>
+              <li><a href="https://www.youtube.com/@Azakkizi" target="_blank"><i class="fa fa-youtube"></i> - YouTube</a></li>
+            </ul>
+          </div>
+          <div class="social-icons-connects-right">
+             <ul>
+              <li><a href="https://www.twitter.com/Azak_kizi" target="_blank"><i class="fa fa-twitter"></i> - Twitter</a></li>
+              <li><a href="https://www.linkedin.com/in/azakkizi" target="_blank" class="right-linkedin"><i class="fa fa-linkedin"></i> - LinkedIn</a></li>
+              <li><a href="https://steamcommunity.com/id/azakkizi" target="_blank"><i class="fa fa-steam"></i> - Steam</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-icons-connects-last">
+          <ul>
+            <li><a href="https://github.com/Azakkizi" target="_blank"><i class="fa fa-github"></i> - GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 100
+    });
+
+    ScrollReveal().reveal('.connects-title' , {delay: 10, origin: 'top'});
+    ScrollReveal().reveal('.social-icons-connects-left' , {delay: 10, origin: 'left'});
+    ScrollReveal().reveal('.social-icons-connects-right' , {delay: 10, origin: 'right'});
+    ScrollReveal().reveal('.social-icons-connects-last' , {delay: 10, origin: 'bottom'});
+  </script>
+</body>
+</html>

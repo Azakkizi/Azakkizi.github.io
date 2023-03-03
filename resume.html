@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume - Betül Azakoğlu</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+    <script src="component.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <div class="header-resume">
+     <my-navbar></my-navbar> 
+     <div class="container-resume">
+      <div class="resume"></div>
+      <div class="download-button" title="This button opens the PDF file in your web browser's default PDF reader">
+        <a href="Betül Azakoğlu - Resume.pdf">DOWNLOAD RESUME</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 100
+    });
+
+    ScrollReveal().reveal('.resume' , {delay: 10, origin: 'left'});
+    ScrollReveal().reveal('.download-button' , {delay: 10, origin: 'right'});
+  </script>
+</body>
+</html>

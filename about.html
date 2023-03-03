@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <title>About - Betül Azakoğlu</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+    <script src="component.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+<div class="header-about">
+     <my-navbar></my-navbar>
+     <div class="about">
+      <div class="my-photo"></div>
+      <div class="container-about">
+        <p>I am a senior in computer engineering at Istanbul University Cerrahpasa.
+          <br> My interest in computers since I was 3 years old was the biggest factor
+          <br> in my decision to become a computer engineer instead of an architect.
+          <br> Both at school and through my own resources, I don't just limit what
+          <br> I learn to theory, but also put it into practice.
+          <br> <br> The reason I started using computers at the age of 3 was because 
+          <br> I played computer games on my older brother's computer. In my free time, 
+          <br> I both play computer games and try to develop them.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 100
+    });
+
+    ScrollReveal().reveal('.container-about' , {delay: 10, origin: 'right'});
+  </script>
+</body>
+</html>
