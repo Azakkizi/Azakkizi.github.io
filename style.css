@@ -71,6 +71,13 @@ ul{
     background-size: cover;
     background-attachment: fixed;
 }
+.header-certificates{
+    background-color: black;
+    background-image: url(images/bg-certificates.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .header-connects{
     position: relative;
     width: 100%;
@@ -102,6 +109,7 @@ ul{
 
 .header .navbar,
 .header-about .navbar,
+.header-certificates .navbar,
 .header-connects .navbar,
 .header-portfolio .navbar,
 .header-resume .navbar{
@@ -125,7 +133,7 @@ ul{
 }
 
 .menu ul {
-    margin-left: 192px;
+    margin-left: 125px;
 }
 
 .menu ul li{
@@ -151,6 +159,7 @@ ul{
 
 .header .contact-info,
 .header-about .contact-info,
+.header-certificates .contact-info,
 .header-connects .contact-info,
 .header-portfolio .contact-info,
 .header-resume .contact-info{
@@ -160,6 +169,7 @@ ul{
 
 .header .contact-info ul,
 .header-about .contact-info ul,
+.header-certificates .contact-info ul,
 .header-connects .contact-info ul,
 .header-portfolio .contact-info ul,
 .header-resume .contact-info ul{
@@ -168,6 +178,7 @@ ul{
 
 .header .contact-info ul li,
 .header-about .contact-info ul li,
+.header-certificates .contact-info ul li,
 .header-connects .contact-info ul li,
 .header-portfolio .contact-info ul li,
 .header-resume .contact-info ul li{
@@ -176,6 +187,7 @@ ul{
 
 .header .contact-info ul li a,
 .header-about .contact-info ul li a,
+.header-certificates .contact-info ul li a,
 .header-connects .contact-info ul li a,
 .header-portfolio .contact-info ul li a,
 .header-resume .contact-info ul li a{
@@ -186,6 +198,7 @@ ul{
 
 .header .contact-info ul li a:hover,
 .header-about .contact-info ul li a:hover,
+.header-certificates .contact-info ul li a:hover,
 .header-connects .contact-info ul li a:hover,
 .header-portfolio .contact-info ul li a:hover,
 .header-resume .contact-info ul li a:hover{
@@ -194,6 +207,7 @@ ul{
 
 .header .contact-info ul li a.sep,
 .header-about .contact-info ul li a.sep,
+.header-certificates .contact-info ul li a.sep,
 .header-connects .contact-info ul li a.sep,
 .header-portfolio .contact-info ul li a.sep,
 .header-resume .contact-info ul li a.sep{
@@ -246,6 +260,55 @@ ul{
     align-items: center;
     padding-top: 100px;
     flex-direction: column;
+}
+
+hr{
+    margin: 100px auto;
+    width: 80%;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.container-certificates{
+    position:relative;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-certificates div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.container-certificates div img{
+    width: 30%;
+    box-shadow: -5px 5px 15px;
+}
+
+.container-certificates div .text-box-cer{
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-left: 10%;
+    color: #fff;
+    backdrop-filter: blur(5px);
+    background: rgb(255, 255, 255, 0.1);
+    padding: 40px;
+    margin-right: 80px;
+    min-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-certificates div .text-box-cer a{
+    color:#fff;
+    transition: all 0.5s;
+}
+
+.container-certificates div .text-box-cer a:hover{
+    color:rgb(190, 41, 21);
 }
 
 .section{
@@ -365,7 +428,6 @@ ul{
 }
 
 .slides-01 img{
-    width: 100%; 
     height: 340px;
     border: 2px solid rgb(255, 255, 255, 0.1);
 }
@@ -420,6 +482,10 @@ ul{
 
 #radio1-5:checked ~ .first{
     margin-left: -80%;
+}
+
+#radio1-6:checked ~ .first{
+    margin-left: -100%;
 }
 
 .slider-02{
@@ -586,9 +652,6 @@ ul{
     margin-bottom: 10px;
 }
 
-
-
-
 .container-resume{
     position: relative;
     top: 5%;
@@ -722,6 +785,7 @@ ul{
     cursor: pointer;
     background-color: rgb(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.5s;
 }
 
@@ -737,6 +801,7 @@ ul{
     cursor: pointer;
     background-color: rgb(255, 255, 255, 0.1);
     backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.5s;
 }
 
